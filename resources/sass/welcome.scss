@@ -1,0 +1,44 @@
+/*SCSS PARA LA PAGINA WELCOME*/
+#container {
+ /*    border: 2px solid green; */
+    width: 100%;
+    position: relative; /*TO APPLY EFFECT*/
+}
+#content {
+    padding: 0 2%;
+}
+#main-banner {
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid rgb(235, 1, 1); */
+    display: flex;
+    flex-direction: row;
+    /*to apply effect*/
+    position: relative;
+    overflow: hidden;
+}
+#main-banner--buy, #main-banner--design {
+    width: 50%;
+ /*    border: 2px solid blue; */
+    height: 100%;
+    color: black;
+    font-size: 2.10rem;
+    /*to apply effect*/
+    transition: transform 0.5s, box-shadow 0.3s;
+    z-index: 1;
+}
+
+#main-banner--buy:hover, #main-banner--design:hover {
+    transform: scale(1.1); /* Ajusta el valor de escala según el efecto de zoom deseado */
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.5); /* Ajusta el valor de la sombra según tus preferencias */
+    z-index: 2;
+    cursor: pointer;
+}
+#main-banner--buy {
+    left: 0;
+}
+#main-banner--design {
+    right: 0;
+}
+
+

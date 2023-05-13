@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    margin: auto;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: 900;
+}
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+

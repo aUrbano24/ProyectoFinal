@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use Laravel\Sanctum\Sanctum;
+
+>>>>>>> 0b4b265a726d64cd767a74b5c052d962eaab9194
 return [
 
     /*
@@ -16,7 +21,11 @@ return [
     'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(
         '%s%s',
         'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',
+<<<<<<< HEAD
         env('APP_URL') ? ','.parse_url(env('APP_URL'), PHP_URL_HOST) : ''
+=======
+        Sanctum::currentApplicationUrlWithPort()
+>>>>>>> 0b4b265a726d64cd767a74b5c052d962eaab9194
     ))),
 
     /*
